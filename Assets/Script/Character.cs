@@ -17,7 +17,7 @@ public class Character : MonoBehaviour{
     public int lustRate;
 
 
-    public int height;
+    public float height;
     public int mass;
     public int fat;
     public string pronoun;
@@ -67,41 +67,63 @@ public class Character : MonoBehaviour{
 
     //Species stuff
 
+    [Range(0.0f, 100f)]
     public int human;
-
+    [Range(0.0f, 100f)]
     public int fox;
+    [Range(0.0f, 100f)]
     public int wolf;
+    [Range(0.0f, 100f)]
     public int dog;
-
+    [Range(0.0f, 100f)]
     public int dragon;
+    [Range(0.0f, 100f)]
     public int gecko;
+    [Range(0.0f, 100f)]
     public int cameleon;
-
-
+    [Range(0.0f, 100f)]
     public int kangaroo;
+    [Range(0.0f, 100f)]
     public int ferret;
+    [Range(0.0f, 100f)]
     public int skunk;
+    [Range(0.0f, 100f)]
     public int weasel;
-
+    [Range(0.0f, 100f)]
     public int cat;
+    [Range(0.0f, 100f)]
     public int tiger;
+    [Range(0.0f, 100f)]
     public int lion;
+    [Range(0.0f, 100f)]
     public int leopard;
-
+    [Range(0.0f, 100f)]
     public int deer;
+    [Range(0.0f, 100f)]
     public int reigndeer;
+    [Range(0.0f, 100f)]
     public int horse;
+    [Range(0.0f, 100f)]
     public int zebra;
+    [Range(0.0f, 100f)]
     public int giraffe;
-
+    [Range(0.0f, 100f)]
     public int speed;
+    [Range(0.0f, 100f)]
     public int smarts;
+    [Range(0.0f, 100f)]
     public int strength;
+    [Range(0.0f, 100f)]
     public int defense;
+    [Range(0.0f, 100f)]
     public int stamina;
+    [Range(0.0f, 100f)]
     public int agility;
+    [Range(0.0f, 100f)]
     public int charisma;
+    [Range(0.0f, 100f)]
     public int armour;
+    [Range(0.0f, 100f)]
 
     public bool awake;
     public bool dead;
@@ -181,69 +203,12 @@ public class Character : MonoBehaviour{
 
     public ArrayList inventory;
 
-    public Character()
+    public void setSpecies(string s)
     {
-        health = 100;
-        magic = 100;
 
-        height = 72;
-        mass = 180;
-
-        speed = 100;
-        smarts = 100;
-        strength = 100;
-        defense = 20;
-        stamina = 100;
-        agility = 100;
-        charisma = 100;
-
-        awake = false;
-        dead = false;
-        digested = false;
-        sexKO = false;
-
-        canBeEaten = true;
-        eaten = false;
-
-        eats = true;
-        stomachCapacity = 10;
-        stomachStrength = 1;
-        gutCapacity = 10;
-        gutSpeed = 1;
-        bowelCapacity = 10;
-        bowelResistance = 1;
-
-        lust = 0;
-        lustRate = 3;
-
-        human = 100;
-
-        fox = 0;
-        wolf = 0;
-        dog = 0;
-
-        dragon = 0;
-        gecko = 0;
-        cameleon = 0;
-
-        kangaroo = 0;
-        ferret = 0;
-        skunk = 0;
-        weasel = 0;
-
-        cat = 0;
-        tiger = 0;
-        lion = 0;
-        leopard = 0;
-
-        deer = 0;
-        reigndeer = 0;
-        horse = 0;
-        zebra = 0;
-        giraffe = 0;
-
-        sexKO = false;
     }
+
+    
 
 	// Use this for initialization
 	void Start () {

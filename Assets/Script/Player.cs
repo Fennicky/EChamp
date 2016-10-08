@@ -82,6 +82,11 @@ public class Player : Character {
 
     }
 
+    public void openCharacterSheet()
+    {
+
+    }
+
     public void digestPrey(int _minutes)
     {
         int hours = 60/_minutes;
@@ -176,7 +181,7 @@ public class Player : Character {
         setCounters();
     }
 
-    int jerkOff()
+    public void jerkOff()
     {
         int load = 0;
         //jerk off code
@@ -192,7 +197,7 @@ public class Player : Character {
             load = 0;
         }
         setCounters();
-        return load;        
+        //Jerk Off scene trigger here        
     }
 
     public void shit()
@@ -216,7 +221,7 @@ public class Player : Character {
 
     }
 
-    void turnOn(int sexiness)
+    public void turnOn(int sexiness)
     {
         lust += sexiness;
 
@@ -226,6 +231,11 @@ public class Player : Character {
             sexKO = true;
         }
         setCounters();
+    }
+
+    public void openInventory()
+    {
+
     }
 
 
